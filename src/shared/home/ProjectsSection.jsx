@@ -12,7 +12,9 @@ const ProjectsSection = () => {
   ];
   return (
     <div>
-      <h1 className="text-center text-3xl font-bold">Some of my projects</h1>
+      <h1 className="text-center text-3xl font-bold mb-8">
+        Some of my projects
+      </h1>
       <div className="space-y-5">
         {projects.map((project, index) => (
           <Project project={project} key={index} />

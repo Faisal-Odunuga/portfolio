@@ -50,7 +50,7 @@ const Header = () => {
       </header>
       {/* Mobile Menu */}
       <nav
-        className={`bg-red-700 transition-transform transform duration-300 ease-in-out fixed z-30 h-screen w-full flex items-center justify-center ${
+        className={`bg-red-700 transition-transform transform duration-300 ease-in-out fixed z-30 h-screen w-full flex items-center justify-center lg:hidden ${
           isMobile ? "translate-x-full" : "translate-x-0"
         }`}
       >

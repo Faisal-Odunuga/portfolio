@@ -6,7 +6,7 @@ import { IoPlayOutline } from "react-icons/io5";
 const Project = ({ project }) => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-6 items-center">
-      <div className="w-full h-[30vh] border-8 border-blue-500">
+      <div className="w-full h-full min-h-[30vh] border-8 border-blue-500">
         <img
           src={project.image}
           alt={project.title}
@@ -22,7 +22,7 @@ const Project = ({ project }) => {
               <IoPlayOutline />
             </span>
             <a href={project.link} target="_blank">
-              View Live
+              Live Demo
             </a>
           </div>
 
@@ -31,7 +31,7 @@ const Project = ({ project }) => {
               <FiGithub />
             </span>
             <a href={project.link} target="_blank">
-              View Code
+              Code
             </a>
           </div>
         </span>
