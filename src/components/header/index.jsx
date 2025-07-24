@@ -19,11 +19,11 @@ const Header = () => {
           </h1>
           <span className="lg:hidden" onClick={() => setIsMobile(!isMobile)}>
             {isMobile ? (
-              <HiMenuAlt2 size={40} />
-            ) : (
               <span className="text-6xl font-normal cursor-pointer select-none">
                 &times;
               </span>
+            ) : (
+              <HiMenuAlt2 size={40} />
             )}
           </span>
           <nav className="hidden lg:flex items-center gap-9">
@@ -51,18 +51,13 @@ const Header = () => {
       {/* Mobile Menu */}
       <nav
         className={`bg-red-700 transition-transform transform duration-300 ease-in-out fixed z-30 h-screen w-full flex items-center justify-center lg:hidden ${
-          isMobile ? "translate-x-full" : "translate-x-0"
+          isMobile ? "translate-x-0" : "translate-x-full"
         }`}
       >
         <div className="flex flex-col items-center justify-center text-center gap-9">
           <ul className="space-y-10">
             {navLinks.map((link, i) => (
-              <li
-                key={i}
-                onClick={() => {
-                  setTimeout(() => setIsMobile(false), 100);
-                }}
-              >
+              <li key={i}>
                 <NavLink
                   to={link[1]}
                   className={({ isActive }) =>

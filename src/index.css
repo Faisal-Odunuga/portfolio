@@ -21,3 +21,9 @@ html {
   height: 70% !important;
   z-index: -1;
 }
+
+@layer components {
+  .img-text {
+    @apply bg-text bg-cover bg-center bg-clip-text text-transparent;
+  }
+}
