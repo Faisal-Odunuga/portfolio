@@ -18,7 +18,13 @@ const Header = () => {
             </Link>
           </h1>
           <span className="lg:hidden" onClick={() => setIsMobile(!isMobile)}>
-            <HiMenuAlt2 size={40} />
+            {isMobile ? (
+              <HiMenuAlt2 size={40} />
+            ) : (
+              <span className="text-6xl font-normal cursor-pointer select-none">
+                &times;
+              </span>
+            )}
           </span>
           <nav className="hidden lg:flex items-center gap-9">
             <ul className="flex items-center gap-12">
@@ -51,7 +57,12 @@ const Header = () => {
         <div className="flex flex-col items-center justify-center text-center gap-9">
           <ul className="space-y-10">
             {navLinks.map((link, i) => (
-              <li key={i}>
+              <li
+                key={i}
+                onClick={() => {
+                  setTimeout(() => setIsMobile(false), 100);
+                }}
+              >
                 <NavLink
                   to={link[1]}
                   className={({ isActive }) =>
@@ -59,7 +70,6 @@ const Header = () => {
                       isActive ? "text-blue-600 font-bold" : ""
                     }`
                   }
-                  onClick={() => setIsMobile(false)}
                 >
                   {link[0].charAt(0).toUpperCase()}
                   {link[0].slice(1)}
