@@ -1,6 +1,6 @@
 import React from "react";
 
-const Button = ({ btnText, variant = "filled", size, ...props }) => {
+const Button = ({ btnText, variant = "filled", size, className, ...props }) => {
   return (
     <button
       {...props}
@@ -10,7 +10,7 @@ const Button = ({ btnText, variant = "filled", size, ...props }) => {
           : variant === "outline"
           ? "bg-white border border-blue-600 hover:border-black"
           : ""
-      } ${size}`}
+      } ${size} ${className}`}
     >
       {btnText}
     </button>
