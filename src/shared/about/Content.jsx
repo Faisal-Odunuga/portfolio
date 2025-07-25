@@ -1,11 +1,12 @@
 import React from "react";
+import ImageWithSkeleton from "../../components/image-skeleton";
 
 const Content = () => {
   return (
     <div className="flex flex-col lg:flex-row gap-12 items-center">
       <div className="basis-1/2 flex items-center justify-center">
-        <img
-          src="../../../public/images/my-pic.png"
+        <ImageWithSkeleton
+          src="images/my-pic.png"
           alt="Faisal Odunuga"
           className="rounded-lg w-[60%] lg:w-[80%]"
         />
