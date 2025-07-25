@@ -2,12 +2,13 @@ import React from "react";
 import Button from "../../components/button";
 import { FiGithub } from "react-icons/fi";
 import { IoPlayOutline } from "react-icons/io5";
+import ImageWithSkeleton from "../../components/image-skeleton";
 
 const Project = ({ project }) => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-6 items-center">
       <div className="w-full h-full min-h-[30vh] border-8 border-blue-500">
-        <img
+        <ImageWithSkeleton
           src={project.image}
           alt={project.title}
           className="w-full h-full object-cover"

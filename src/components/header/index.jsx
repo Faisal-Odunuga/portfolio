@@ -14,7 +14,7 @@ const Header = () => {
       <header className="z-20 bg-white shadow-sm sticky top-0 px-8 lg:px-16 py-4 items-center border-b">
         <div className="flex items-center justify-between">
           <h1 className="bg-blue-50 rounded-full border-[2px] p-[2px] border-blue-500 w-12 h-12 flex items-center justify-center active">
-            <Link>
+            <Link to={allPaths.home}>
               <p className="font-bold text-blue-700 text-lg">F.O</p>
             </Link>
           </h1>
