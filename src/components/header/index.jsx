@@ -3,6 +3,7 @@ import { Link } from "react-router";
 import { allPaths } from "../../routes/path";
 import { NavLink } from "react-router";
 import { HiMenuAlt2 } from "react-icons/hi";
+import { MdDarkMode } from "react-icons/md";
 
 const Header = () => {
   const navLinks = Object.entries(allPaths);
@@ -44,15 +45,18 @@ const Header = () => {
                 </li>
               ))}
             </ul>
-            <span className="rounded-full shadow-md p-1">Mode</span>
+            <span className="rounded-full shadow-inner p-1 hover:shadow-lg">
+              <MdDarkMode size={25} />
+            </span>
           </nav>
         </div>
       </header>
       {/* Mobile Menu */}
       <nav
-        className={`bg-red-700 transition-transform transform duration-300 ease-in-out fixed z-30 h-screen w-full flex items-center justify-center lg:hidden ${
+        className={`bg-white transition-transform transform duration-300 ease-in-out fixed z-30 h-screen w-full flex items-center justify-center lg:hidden ${
           isMobile ? "translate-x-0" : "translate-x-full"
         }`}
+        onClick={() => setIsMobile(false)}
       >
         <div className="flex flex-col items-center justify-center text-center gap-9">
           <ul className="space-y-10">
@@ -65,6 +69,7 @@ const Header = () => {
                       isActive ? "text-blue-600 font-bold" : ""
                     }`
                   }
+                  onClick={() => setIsMobile(false)}
                 >
                   {link[0].charAt(0).toUpperCase()}
                   {link[0].slice(1)}
@@ -72,7 +77,9 @@ const Header = () => {
               </li>
             ))}
           </ul>
-          <span className="rounded-full shadow-md p-1">Mode</span>
+          <span className="rounded-full shadow-inner p-1 hover:shadow-lg">
+            <MdDarkMode size={25} />
+          </span>
         </div>
       </nav>
     </>

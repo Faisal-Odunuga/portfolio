@@ -1,6 +1,8 @@
 import React from "react";
 import Button from "../../components/button";
 import ParticleComp from "../../components/ParticleComp";
+import { Link } from "react-router";
+import { allPaths } from "../../routes/path";
 
 const Hero = () => {
   return (
@@ -15,9 +17,13 @@ const Hero = () => {
             interfaces with React, Tailwind, and JavaScript. Let’s bring ideas
             to life, one pixel at a time.
           </p>
-          <div className="flex gap-3">
-            <Button btnText={"View My Works"} />
-            <Button btnText={"Download CV"} variant="outline" />
+          <div className="flex flex-wrap gap-3">
+            <Link to={allPaths.projects}>
+              <Button btnText={"View My Works"} />
+            </Link>
+            <a href="#" target="_blank">
+              <Button btnText={"Download CV"} variant="outline" />
+            </a>
           </div>
         </div>
       </ParticleComp>
