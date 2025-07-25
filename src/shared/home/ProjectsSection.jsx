@@ -6,7 +6,7 @@ const ProjectsSection = () => {
     {
       title: "Cookit 👨🏿‍🍳",
       desc: "Cookit Now is a modern recipe web app that helps users discover, search, and explore delicious meals in seconds. Built with a sleek interface and smooth UX, it features real-time recipe search, responsive design, and dynamic routing.",
-      image: "../../../public//images/cookit.png",
+      image: "/images/cookit.png",
       link: "https://www.example.com",
     },
   ];

@@ -30,12 +30,13 @@ const AllProjects = () => {
     {
       title: "HTTPie (Clone) - Desktop Only",
       desc: "A pixel-perfect clone of the HTTPie homepage built using only HTML and CSS. Built to showcase precision in layout replication, spacing, and styling — without responsiveness or JavaScript.",
-      image: "../../../public/images/httpie.png",
-      stack: ["React", "Vanila CSS", "Vercel"],
+      image: "/images/httpie.png",
+      stack: ["HTML", "Vanilla CSS", "Vercel"],
       link: "https://httpie-clone.vercel.app/",
       github: "https://github.com/Faisal-Odunuga/httpie-clone",
     },
   ];
+
   return (
     <div>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
