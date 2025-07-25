@@ -2,16 +2,22 @@ import React from "react";
 import Button from "../../components/button";
 import { FiGithub } from "react-icons/fi";
 import { IoPlayOutline } from "react-icons/io5";
+import ImageWithSkeleton from "../../components/image-skeleton";
 
 const ProjectComp = ({ project }) => {
   return (
     <div className="border border-blue-600 rounded-lg">
       <div className="w-full">
-        <img
+        <ImageWithSkeleton
           src={project.image}
           alt={project.title}
           className="w-full h-full object-cover rounded-t-lg"
         />
+        {/* <img
+          src={project.image}
+          alt={project.title}
+          className="w-full h-full object-cover rounded-t-lg"
+        /> */}
       </div>
       <div className="space-y-4 p-6">
         <h1 className="text-3xl font-bold">{project.title}</h1>
