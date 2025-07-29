@@ -102,9 +102,9 @@ const MySkills = () => {
     ],
   };
   return (
-    <div>
+    <div className="!mb-20">
       <h1 className="text-center text-3xl font-bold mb-8">{"<Skills/>"}</h1>
-      <div className="flex flex-wrap justify-between gap-10">
+      <div className="flex flex-wrap justify-between gap-10 text-wrap">
         <div>
           <h2 className="font-bold mb-4">Programming Languages</h2>
           <div className="flex flex-wrap md:grid md:grid-cols-2 lg:gap-8 md:gap-7 sm:gap-6 gap-4">

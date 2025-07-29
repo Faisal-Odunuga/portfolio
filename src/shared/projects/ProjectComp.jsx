@@ -6,7 +6,7 @@ import ImageWithSkeleton from "../../components/image-skeleton";
 
 const ProjectComp = ({ project }) => {
   return (
-    <div className="border border-blue-600 rounded-lg">
+    <div className="border border-primary rounded-lg">
       <div className="w-full">
         <ImageWithSkeleton
           src={project.image}
@@ -26,7 +26,7 @@ const ProjectComp = ({ project }) => {
           {project?.stack.map((project, i) => (
             <span
               key={i}
-              className="text-sm py-1 px-2 rounded-full bg-blue-500 text-white"
+              className="text-sm py-1 px-2 rounded-full bg-primary text-white"
             >
               {project}
             </span>

@@ -11,11 +11,11 @@ const Header = () => {
 
   return (
     <>
-      <header className="z-20 bg-white shadow-sm sticky top-0 px-8 lg:px-16 py-4 items-center border-b">
+      <header className="z-20 bg-white shadow-sm sticky top-0 px-8 lg:px-16 py-4 items-center border-b font-medium">
         <div className="flex items-center justify-between">
-          <h1 className="bg-blue-50 rounded-full border-[2px] p-[2px] border-blue-500 w-12 h-12 flex items-center justify-center active">
+          <h1 className="bg-blue-50 rounded-full border-[2px] p-[2px] border-primary w-12 h-12 flex items-center justify-center active">
             <Link to={allPaths.home}>
-              <p className="font-bold text-blue-700 text-lg">F.O</p>
+              <p className="font-bold text-primary text-lg">F.O</p>
             </Link>
           </h1>
           <span className="lg:hidden" onClick={() => setIsMobile(!isMobile)}>
@@ -35,7 +35,7 @@ const Header = () => {
                     to={link[1]}
                     className={({ isActive }) =>
                       `cursor-pointer ${
-                        isActive ? "text-blue-600 font-bold" : ""
+                        isActive ? "text-primary font-bold" : ""
                       }`
                     }
                   >
@@ -65,9 +65,7 @@ const Header = () => {
                 <NavLink
                   to={link[1]}
                   className={({ isActive }) =>
-                    `cursor-pointer ${
-                      isActive ? "text-blue-600 font-bold" : ""
-                    }`
+                    `cursor-pointer ${isActive ? "text-primary font-bold" : ""}`
                   }
                   onClick={() => setIsMobile(false)}
                 >

@@ -7,7 +7,7 @@ import ImageWithSkeleton from "../../components/image-skeleton";
 const Project = ({ project }) => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-6 items-center">
-      <div className="w-full h-full min-h-[30vh] border-8 border-blue-500">
+      <div className="w-full h-full border-8 border-primary">
         <ImageWithSkeleton
           src={project.image}
           alt={project.title}
@@ -18,7 +18,7 @@ const Project = ({ project }) => {
         <h1 className="text-3xl font-bold">{project.title}</h1>
         <p className="text-base">{project.desc}</p>
         <span className="flex gap-4">
-          <div className="flex gap-2 items-center transition-colors duration-150 hover:border border-blue-500 rounded-lg p-3">
+          <div className="flex gap-2 items-center transition-colors duration-200 ease-in-out hover:border hover:border-primary rounded-lg p-3">
             <span>
               <IoPlayOutline />
             </span>
@@ -27,7 +27,7 @@ const Project = ({ project }) => {
             </a>
           </div>
 
-          <div className="flex gap-2 items-center transition-colors duration-75 hover:border border-blue-500 rounded-lg p-3">
+          <div className="flex gap-2 items-center transition-colors duration-200 ease-in-out hover:border hover:border-primary rounded-lg p-3">
             <span>
               <FiGithub />
             </span>

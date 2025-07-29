@@ -3,8 +3,14 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      transitionProperty: {
+        "btn-hover": "background-color, color, transform",
+      },
       backgroundImage: {
-        text: "url('./public/images/abs.jpg')",
+        text: "url('images/abs.jpg')",
+      },
+      colors: {
+        primary: "#1454F4",
       },
     },
   },

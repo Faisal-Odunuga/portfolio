@@ -4,14 +4,15 @@ import ImageWithSkeleton from "../../components/image-skeleton";
 const Content = () => {
   return (
     <div className="flex flex-col lg:flex-row gap-12 items-center">
-      <div className="basis-1/2 flex items-center justify-center">
+      <div className=" flex items-center justify-center">
         <ImageWithSkeleton
-          src="images/my-pic.png"
+          src="images/faisal.jpeg"
           alt="Faisal Odunuga"
-          className="rounded-lg w-[60%] lg:w-[80%]"
+          className="flex items-center justify-center"
+          imgClass="rounded-2xl w-[60%] lg:w-[80%]"
         />
       </div>
-      <div className="basis-1/2 space-y-5">
+      <div className="space-y-5">
         <h2 className="text-2xl font-bold">Meet Faisal Odunuga 👥</h2>
         <p>
           Hi, I'm Faisal — a passionate Front-End Developer 💻 with 3 years of

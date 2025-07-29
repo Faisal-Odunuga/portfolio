@@ -1,6 +1,12 @@
 import { useState } from "react";
 
-const ImageWithSkeleton = ({ src, alt, className, skeletonClass }) => {
+const ImageWithSkeleton = ({
+  src,
+  alt,
+  className = "",
+  skeletonClass = "",
+  imgClass = "",
+}) => {
   const [loaded, setLoaded] = useState(false);
 
   return (
@@ -15,7 +21,7 @@ const ImageWithSkeleton = ({ src, alt, className, skeletonClass }) => {
         alt={alt}
         className={`transition-opacity duration-500 ease-in-out ${
           loaded ? "opacity-100" : "opacity-0"
-        } rounded`}
+        } rounded ${imgClass}`}
         onLoad={() => setLoaded(true)}
       />
     </div>
