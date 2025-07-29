@@ -7,7 +7,7 @@ export default {
         "btn-hover": "background-color, color, transform",
       },
       backgroundImage: {
-        text: "url('images/abs.jpg')",
+        text: "url('/images/abs.jpg')",
       },
       colors: {
         primary: "#1454F4",
