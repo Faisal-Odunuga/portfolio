@@ -21,7 +21,11 @@ const Hero = () => {
             <Link to={allPaths.projects}>
               <Button btnText={"View My Works"} />
             </Link>
-            <a href="#" target="_blank">
+            <a
+              href="https://drive.google.com/file/d/1f-UBR-qFZ2uiLPruXyWkyHLXaAtfTee8/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Button btnText={"Download CV"} variant="outline" />
             </a>
           </div>
